@@ -226,6 +226,7 @@ nav.show .close {
     background-image: url('../img/bg-hero.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .banner .container {
