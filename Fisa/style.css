@@ -416,7 +416,9 @@ nav.show .close {
     color: var(--background-liht-Primary) ;
 }
 
-
+.service .container h2 span {
+    color: var(--action-green-ligth-primary);
+}
 
 .service .container .cards .card h3{
     grid-area: title;
