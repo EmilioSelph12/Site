@@ -508,6 +508,13 @@ nav.show .close {
 
 }
 
+.separator {
+    width: 100px;
+    height: 4px;
+    margin-bottom: 1.6rem;
+    background-color: var(--action-porple-ligth-Secondary);
+}
+
 .portifolio .container p {
     grid-area: p-p;
 
