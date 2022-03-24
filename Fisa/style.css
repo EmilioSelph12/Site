@@ -433,14 +433,21 @@ nav.show .close {
     color: var(--background-liht-Primary) ;
 }
 
-.service .container .cards .card p{
+.service .container .cards .card ul {
+    padding-left: 25px ;
+    margin-bottom: 1.6rem;
+}
+
+
+.service .container .cards .card ul li{
     grid-area: title;
+    list-style: url('img/liststile.svg');
     
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 40px;
+
     
     color: var(--background-liht-Secondary) ;
 }
@@ -450,12 +457,12 @@ nav.show .close {
     gap: 32px;
 }
 
-/*.service .container .cards  .card { 
+.service .container .cards  .card { 
     padding: 32px;
     border-radius: 8px;
-    border: solid 1.5px rgb(51, 50, 50);
-    background-color: rgb(19, 18, 18);
-}*/
+    border: solid 1px #827D9C;
+    background-color: #0C0C0C;
+}
 
 .service .container .cards .card1{
     grid-area: card1;
