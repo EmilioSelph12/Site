@@ -255,7 +255,11 @@ nav.show .close {
     line-height: 36px;
     margin-bottom: 16px;
 
-    color: var(--background-liht-Primary) ;
+    background: linear-gradient(270deg, #3B8645 0%, #3B4686 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 .banner .container .text-hero p {
     font-family: Montserrat;
@@ -426,8 +430,8 @@ nav.show .close {
     
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 34px;
     margin-bottom: 16px;
     
     color: var(--background-liht-Primary) ;
@@ -445,9 +449,8 @@ nav.show .close {
     
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 40px;
-
     
     color: var(--background-liht-Secondary) ;
 }
@@ -457,25 +460,24 @@ nav.show .close {
     gap: 32px;
 }
 
+.service .container .cards  .card#serv1 h3{ 
+    color: var(--action-porple-ligth-primary);
+}
+
+.service .container .cards  .card#serv2 h3{ 
+    color: var(--action-green-ligth-primary);
+}
+
+.service .container .cards  .card#serv3 h3{ 
+    color: var(--action-porple-ligth-Secondary);
+}
+
 .service .container .cards  .card { 
     padding: 32px;
     border-radius: 8px;
-    border: solid 1px #827D9C;
-    background-color: #0C0C0C;
+    background-color: #131313;
 }
 
-.service .container .cards .card1{
-    grid-area: card1;
-
-}
-
-.service .container .cards .card2{
-    grid-area: card2;
-}
-
-.service .container .cards .card3{
-    grid-area: card3;
-}
 
 .service a {
     grid-area: link;
@@ -494,6 +496,7 @@ nav.show .close {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 
 /*PORTIFOLIO*/
 .portifolio .container {
