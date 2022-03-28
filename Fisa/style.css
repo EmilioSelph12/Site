@@ -424,14 +424,23 @@ nav.show .close {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    border-image: linear-gradient(270deg, 
+    var(--action-green-ligth-Secondary) 0%, 
+    var(--action-porple-ligth-Secondary) 100%);
 
-    color: var(--background-liht-Primary);
-    background-color: var(--action-porple-ligth-Secondary);
+    border-width: .2rem;
+    border-style: solid;
+    border-image-slice: 1;
+    border-radius: .8rem;
     transition: 0.3s;
+    
+    color: var(--background-liht-Primary);
 }
 
 .about .container .text-about .btn-about:hover {
-    background-color: var(--action-porple-ligth-Tertiary);
+    border-color: var(--action-green-ligth-Tertiary);
+    background-color: var(--action-green-ligth-Tertiary);
 }
 
 
