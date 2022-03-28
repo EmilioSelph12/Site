@@ -11,7 +11,7 @@
 <body>
     <header id="header">
         <nav class="container">
-            <a href="#" class="logo"><img src="img/Logo.svg" alt=""></a>
+            <a href="#home" class="logo"><img src="img/Logo.svg" alt=""></a>
             <div class="menu">
                 <ul>
                     <li><a class="title" href="#home">Inicio</a></li>
@@ -25,7 +25,6 @@
             <div class="toggle open"><img src="img/menu.svg" alt=""></div>
             <div class="toggle close"><img src="img/Close.svg" alt=""></div>
         </nav>
-    <div class="divide1"></div>
 
     </header>
 
@@ -34,9 +33,13 @@
         <section class="banner" id="home">
             <div class="container">
                 <div class="text-hero">
-                    <h1>Sua empresa para um proximo nivel</h1>
+                    <h1>Sua <span>empresa</span> para um proximo nivel</h1>
                     <p>Invista no futuro de sua empresa, formando líderes preparados para lidar com complexidade, interação e agilidade.</p>
-                    <a href="#" class="btn btn-hero">Saber mais</a>
+                    <a 
+                        href="#about" class="btn btn-hero"
+                        target="-blank"
+                        ><img src="img/arrow-right-circle.svg" alt="">Saiba mais 
+                    </a> 
                 </div>
                 <div class="img-hero">
                     <img src="img/landing.svg" alt="">
@@ -53,9 +56,14 @@
                 </div>
     
                 <div class="text-about">
+                    <div class="divide"></div>
                     <h2>Quem somos</h2>
                     <p>Invista no futuro de sua empresa, formando líderes preparados para lidar com complexidade, interação e agilidade. Invista no futuro de sua empresa, formando líderes preparados para lidar com complexidade, interação e Invista no futuro de sua empresa</p>
-                    <a href="#" class="btn btn-about">Saber mais</a>
+                    <a 
+                        href="#contact" class="btn btn-about"
+                        target="-blank"
+                        ><img src="img/arrow-right-circle.svg" alt="">Fale connosco
+                    </a> 
                 </div>
             </div>    
         </section> 
@@ -68,7 +76,7 @@
 
                 <div class="cards">
                     <div class="card" id="serv1">
-                        <h3>FIZA Consultoria em Negócios e Investimentos</h3>
+                        <h3>Consultoria em Negócios e Investimentos</h3>
                         <ul>
                             <li>Planos de Negócio e Marketing</li>
                             <li>Reestruturação de Empresas</li>
@@ -81,7 +89,7 @@
                 </div>
 
                 <div class="card" id="serv2">
-                    <h3>FIZA Formação & Treinamento</h3>
+                    <h3>Formação & Treinamento</h3>
                     <ul>
                         <li>Cursos Profissionalizantes</li>
                         <li>Seminários e Palestras</li>
@@ -90,7 +98,7 @@
                 </div>
 
                 <div class="card" id="serv3">
-                    <h3>FIZA Assistência Técnica & Serviços</h3>
+                    <h3>Assistência Técnica & Serviços</h3>
                     <ul>
                         <li>Reparações e manutenção de ACs</li>
                         <li>Conservação e requalificação de ambientes habitados</li>
@@ -152,10 +160,10 @@
                     <h2>Entre em contato connosco!</h2>
                     <p>Entre em contato com a FIZA, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
                     <a 
-                    
-                    href="https://api.whatsapp.com/send?phone=+244943394417&text=Oi! Gostaria de agendar um horário" class="btn btn-contact"
-                    target="-blank"
-                    ><img src="img/whatsapp.svg" alt=""> Entre em contacto</a>  
+                        href="https://api.whatsapp.com/send?phone=+244943394417&text=Oi! Gostaria de agendar um horário" class="btn btn-contact"
+                        target="-blank"
+                        ><img src="img/whatsapp.svg" alt="">Entre em contacto
+                    </a>  
                 </div>
                 <div class="contactos">
                     <p><img src="img/phone.svg" alt="">(+244) 943 394 417</p>
@@ -171,7 +179,7 @@
     <footer>
         <div class="container">
             <div class="text-footer">
-                <img src="img/Logo.svg" alt="">
+                <a href="#home"><img src="img/Logo.svg" alt=""></a>
                 <p>©2022 Emílio Selph <br> Todos os direitos reservados.</p>
             </div>
             <div class="social-media">

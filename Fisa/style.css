@@ -23,6 +23,7 @@ html {
     --labes-liht-Secondary: #282828;
     --labes-liht-Tertiary: #3C3C3C;
     --labes-liht-Quaternary: #505050;
+    --card-serve-bacground: #131313;
    
    scroll-behavior: smooth;
 
@@ -42,8 +43,8 @@ img {
 .container {
     margin: 0 2.4rem;
 
-    min-width: 305px;
-    max-width: 1120px;
+    min-width: 30rem;
+    max-width: 112rem;
 }
 
 @media (min-width: 1200px) {
@@ -56,14 +57,18 @@ img {
 
 .divide1 {
     width: 100%;
-    height: 0.1rem;
-    background: linear-gradient(270deg, #3B8645 0%, #3B4686 100%);
+    height: .1rem;
+    background: linear-gradient(270deg, 
+    var(--action-green-ligth-Secondary) 0%, 
+    var(--action-porple-ligth-Secondary) 100%);
 }
 
 .divide2 {
     width: 100%;
-    height: 1px;
-    background: linear-gradient(270deg, #3B4686  0%, #3B8645 100%);
+    height: .1rem;
+    background: linear-gradient(270deg, 
+    var(--action-porple-ligth-Secondary)  0%, 
+    var(--action-green-ligth-Secondary) 100%);
 }
     
 
@@ -211,7 +216,7 @@ nav.show .close {
     nav .menu ul li a {
         font-family: 'Poppins';
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 100%;
     }
 
@@ -226,21 +231,21 @@ nav.show .close {
     background-image: url('../img/bg-hero.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .banner .container {
-    padding: 150px 0;
-    
+    padding: 15rem 0; 
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 32px;
+    justify-content: center;
+    gap: 3.2rem;
+    height: 100vh;
+
 }
 
 .banner .container .text-hero {
-    min-width: 305px;
-
+    min-width: 30.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,30 +256,45 @@ nav.show .close {
 .banner .container .text-hero h1 {
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
-    margin-bottom: 16px;
+    font-size: 4.2rem;
+    line-height: 4.0rem;
+    margin-bottom: 1.6rem;
 
-    background: linear-gradient(270deg, #3B8645 0%, #3B4686 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: var(--background-liht-Primary);
+}
+
+.banner .container .text-hero span {
+    color: var(--action-green-ligth-primary);
 }
 .banner .container .text-hero p {
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 47px;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    margin-bottom: 4.7rem;
 
 
     color: var(--background-liht-Secondary) ;
 }
 
+.banner .container .text-hero a img {
+    width: 2.4rem; 
+    margin-right: 1.6rem;
+}
+
 .banner .container .text-hero .btn-hero {
     border-radius: .8rem;
     padding: 1.5rem 6.4rem;
+
+    color: var(--background-liht-Primary);
+    background-color: var(--action-porple-ligth-Secondary);
+    transition: 0.3s;max-width: 31.8rem;
+    border-radius: .8rem;
+    padding: 1.5rem 6.4rem; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: var(--background-liht-Primary);
     background-color: var(--action-porple-ligth-Secondary);
@@ -287,7 +307,7 @@ nav.show .close {
 
 .banner .container .img-hero {
 
-    min-width: 305px;
+    min-width: 30.5rem;
     display: none;
 }
 
@@ -296,26 +316,34 @@ nav.show .close {
     opacity: 0;
 }
 
+@media (min-width: 768px) {
+.banner .container .text-hero h1 {
+        font-size: 8.2rem;
+        line-height: 10rem;
+        margin-bottom: 3.2rem
+    }
+}
+
 @media (min-width: 1200px) {
     .banner {
         background-image: none;
     }
 
     .banner .container {
-        padding: 80px 0;
+        padding: 8.0rem 0;
         flex-direction: row;
     }
 
     .banner .container .text-hero {
         align-items: flex-start;
         text-align: start;
-        max-width: 544px;
+        max-width: 54.4rem;
     }
 
     .banner .container .text-hero h1 {
-        font-size: 40px;
-        line-height: 56px;
-
+        font-size: 5.8rem;
+        line-height: 5.8rem;
+        margin-bottom: 3.2rem;
     }
 
     .banner .container .img-hero {
@@ -330,16 +358,16 @@ nav.show .close {
 
 /*ABOUT*/
 .about .container {
-    padding: 100px 0;
-    min-width: 305px;    
+    padding: 10rem 0;
+    min-width: 30.5rem;    
     
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 3.2rem;
 }
 
 .about .container .img-about {
-    min-width: 305px;
+    min-width: 30.5rem;
 }
 
 .about .container .img-about img {
@@ -356,12 +384,19 @@ nav.show .close {
     justify-content: center;
 }
 
+.about .container .text-about .divide {
+    width: 10rem;
+    height: .4rem;
+    margin-bottom: 1.6rem;
+    background-color: var(--action-green-ligth-primary);
+}
+
 .about .container .text-about h2 {
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 16px;
+    font-size: 4.0rem;
+    line-height: 4.0rem;
+    margin-bottom: 1.6rem;
 
     color: var(--background-liht-Primary) ;
 }
@@ -369,16 +404,26 @@ nav.show .close {
 .about .container .text-about p {
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 47px;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    margin-bottom: 4.7rem;
 
     color: var(--background-liht-Secondary) ;
 }
 
+.about .container .text-about a img {
+    width: 2.4rem; 
+    margin-right: 1.6rem;
+}
+
 .about .container .text-about .btn-about {
+    max-width: 31.8rem;
     border-radius: .8rem;
-    padding: 1.5rem 6.4rem;
+    padding: 1.5rem 6.4rem; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: var(--background-liht-Primary);
     background-color: var(--action-porple-ligth-Secondary);
@@ -396,7 +441,7 @@ nav.show .close {
     }
 
     .about .container .text-about {
-        max-width: 544px;
+        max-width: 54.4rem;
         text-align: start;
     
         align-items: flex-start;
@@ -407,7 +452,7 @@ nav.show .close {
 .service .container{
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
+    padding: 10rem 0;
 }
 
 .service .container h2 {
@@ -415,30 +460,30 @@ nav.show .close {
 
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 56px;
+    font-size: 4.0rem;
+    margin-bottom: 5.6rem;
 
     color: var(--background-liht-Primary) ;
 }
 
 .service .container h2 span {
-    color: var(--action-green-ligth-primary);
+    color: var(--action-porple-ligth-primary);
 }
 
 .service .container .cards .card h3{
     grid-area: title;
     
     font-family: Montserrat;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 34px;
-    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.0rem;
+    margin-bottom: 1.6rem;
     
     color: var(--background-liht-Primary) ;
 }
 
 .service .container .cards .card ul {
-    padding-left: 25px ;
+    padding-left: 2.5rem ;
     margin-bottom: 1.6rem;
 }
 
@@ -449,19 +494,19 @@ nav.show .close {
     
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 1.8rem;
+    line-height:2.8rem;
     
     color: var(--background-liht-Secondary) ;
 }
 
 .service .container .cards {
     display: grid;
-    gap: 32px;
+    gap: 3.2rem;
 }
 
 .service .container .cards  .card#serv1 h3{ 
-    color: var(--action-porple-ligth-primary);
+    color: var(--action-green-ligth-primary);
 }
 
 .service .container .cards  .card#serv2 h3{ 
@@ -469,13 +514,12 @@ nav.show .close {
 }
 
 .service .container .cards  .card#serv3 h3{ 
-    color: var(--action-porple-ligth-Secondary);
+    color: var(--action-green-ligth-primary);
 }
 
 .service .container .cards  .card { 
-    padding: 32px;
-    border-radius: 8px;
-    background-color: #131313;
+    padding: 3.2rem;
+    background-color: var(--card-serve-bacground);
 }
 
 
@@ -485,7 +529,7 @@ nav.show .close {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
 
     color: var(--action-porple-ligth-Secondary);
@@ -500,7 +544,7 @@ nav.show .close {
 
 /*PORTIFOLIO*/
 .portifolio .container {
-    padding: 100px 0;
+    padding: 10rem 0;
     display: flex;
     flex-direction: column;
 }
@@ -514,16 +558,16 @@ nav.show .close {
 
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 16px;
+    font-size: 4.0rem;
+    margin-bottom: 1.6rem;
 
     color: var(--background-liht-Primary) ;
 
 }
 
 .separator {
-    width: 100px;
-    height: 4px;
+    width: 10rem;
+    height: .4rem;
     margin-bottom: 1.6rem;
     background-color: var(--action-porple-ligth-Secondary);
 }
@@ -533,15 +577,15 @@ nav.show .close {
 
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 16px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 1.6rem;
 
     color: var(--background-liht-Secondary) ;
 }
 
 .portifolio .container .card-p {
-    min-width: 305px;
+    min-width: 30.5rem;
 }
 
 .portifolio .container .card-p1 {
@@ -562,9 +606,9 @@ nav.show .close {
 .portifolio .container .card-p h3 {
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
-    margin: 16px 0;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    margin: 1.6rem 0;
 
     color: var(--background-liht-Primary) ;
 }
@@ -572,7 +616,7 @@ nav.show .close {
 @media (min-width: 768px) {
     .portifolio .container .cards {
         display: grid;
-        gap: 32px;
+        gap: 3.2rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'card-p1 card-p2''card-p3 card-p4';
     }
@@ -582,21 +626,21 @@ nav.show .close {
 /*CONTACTO*/
 
 .contacto .container {
-    padding: 100px 0;
+    padding: 10rem 0;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 3.2rem;
 }
 
 .contacto .container .text-contact {
-    max-width: 544px;
+    max-width: 54.4rem;
 }
 
 .contacto .container .text-contact h2 {
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 16px;
+    font-size: 4.0rem;
+    margin-bottom: 1.6rem;
 
     color: var(--action-porple-ligth-Secondary) ;
 }
@@ -604,15 +648,15 @@ nav.show .close {
 .contacto .container p {
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
 
     color: var(--background-liht-Secondary) ;
 }
 
 .contacto .container .text-contact p {
     
-    margin-bottom: 47px;
+    margin-bottom: 4.7rem;
 }
 
 .contacto .container .text-contact a img {
@@ -639,8 +683,8 @@ nav.show .close {
 }
 
 .contacto .container .contactos {
-    min-width: 305px;
-    max-width: 544px;
+    min-width: 30.5rem;
+    max-width: 54.4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -662,38 +706,38 @@ nav.show .close {
 }
 
 footer .container {
-    padding: 80px 0;
+    padding: 8.0rem 0;
     
     display: flex; 
     flex-direction: column;
-    gap: 32px;
+    gap: 3.2rem;
 }
 
 footer .container .text-footer {
-    max-width: 544px;
+    max-width: 54.4rem;
 }
 
 footer .text-footer img {
-    max-width: 85px;
-    margin-bottom: 32px;
+    max-width: 8.5rem;
+    margin-bottom: 3.2rem;
 
 }
 
 footer .text-footer p {
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 38px;
+    font-size: 1.6rem;
+    line-height: 3.8rem;
 
     color: var(--background-liht-Secondary) ;
 }
 
 
 footer .container .social-media {
-    max-width: 544px;
+    max-width: 54.4rem;
 
     display: flex;
-    gap: 32px;
+    gap: 3.2rem;
     align-items: center;
 }
 
@@ -705,7 +749,7 @@ footer .container .social-media {
 
     footer .container .social-media {
         justify-content: flex-end;
-        max-width: 544px;
+        max-width: 54.4rem;
     }
 }
 
