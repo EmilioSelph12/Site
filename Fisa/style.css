@@ -404,9 +404,9 @@ nav.show .close {
 .about .container .text-about p {
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 2.0rem;
-    line-height: 3.0rem;
-    margin-bottom: 4.7rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 3.2rem;
 
     color: var(--background-liht-Secondary) ;
 }
